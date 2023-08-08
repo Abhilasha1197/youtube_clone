@@ -100,7 +100,8 @@ const Header = () => {
 					</div>
 				</div>
 				<div className="flex h-8 w-8 overflow-hidden rounded-full md:ml-4">
-					<img src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg" />
+					{/* <img src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg" /> */}
+					<img src="https://i.pinimg.com/236x/be/80/75/be8075c3043965030d69e8bccf2b5c5c.jpg" />
 				</div>
 			</div>
 		</div>
