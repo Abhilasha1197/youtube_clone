@@ -159,7 +159,7 @@ const Header = () => {
 			<div className="flex h-5 items-center">
 				{pageName !== "video" && (
 					<div
-						className="flex md:hidden md:mr-6 cursor-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]"
+						className="flex md:mr-6 cursor-not-pointer items-center justify-center h-10 w-10 rounded-full hover:bg-[#303030]/[0.6]"
 						onClick={mobileMenuToggle}
 					>
 						{mobileMenu ? (
@@ -246,27 +246,22 @@ const Header = () => {
 					<img src="https://i.pinimg.com/236x/be/80/75/be8075c3043965030d69e8bccf2b5c5c.jpg" />
 				</div>
 
-				{/* Popup */}
+				
 				{showPopup && (
-					<div className="fixed inset-0 flex items-center justify-center z-50">
-						<div className="bg-white rounded-lg shadow-lg p-6 w-72">
-							<div className="flex justify-between items-center mb-3">
-								<h2 className="text-lg font-semibold">
-									Feature is yet to be created
-								</h2>
-								<button
-									className="text-gray-500 hover:text-gray-800"
-									onClick={togglePopup}
-								>
-									<CgClose className="text-xl" />
-								</button>
-							</div>
-							<p className="text-gray-600">
-								This feature is currently under development.
-							</p>
-						</div>
-					</div>
-				)}
+                <div className="fixed inset-0 flex items-center justify-center z-50">
+                <div className="bg-white rounded-lg shadow-lg p-6 w-72 relative">
+                <button
+                className="text-gray-500 hover:text-gray-800 absolute top-0 right-0 m-3"
+                onClick={togglePopup}
+                >
+                <CgClose className="text-xl" />
+                </button>
+                <h2 className="text-lg font-semibold text-center">
+                Work in Progress
+               </h2>
+               </div>
+               </div>
+              )}
 			</div>
 		</div>
 	);
